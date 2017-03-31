@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_memo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    tools:context="com.bishe.renbinbin1.secret_master.module.memo.MemoActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_blue">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:text="日期"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_alignRight="@id/tv_date"
+            android:id="@+id/tv_finsh"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ticket_back"
+            android:padding="5dp"
+            android:id="@+id/iv_back"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCBC65"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/et_msg"
+        android:gravity="top"/>
+</LinearLayout>

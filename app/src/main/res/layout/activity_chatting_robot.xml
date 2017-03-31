@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chatting_robot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bishe.renbinbin1.secret_master.module.robot.ChattingRobotActivity">
+
+    <LinearLayout
+        android:background="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/iv_robot_back"
+            android:src="@mipmap/ticket_back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="聊天机器人"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:stackFromBottom="true"
+        android:id="@+id/rel_robot">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="请输入内容"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:id="@+id/et_msg"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_send"
+            android:background="@drawable/btn_robot_send"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>

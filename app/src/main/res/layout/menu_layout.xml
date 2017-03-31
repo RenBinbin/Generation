@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/nav_head"
+        android:background="@mipmap/side_bg">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/simple_side_head"
+            fresco:roundAsCircle="true"
+            fresco:placeholderImage="@mipmap/side_bg" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/simple_side_head"
+            android:gravity="center"
+            android:id="@+id/et_side_head"
+            android:layout_marginTop="10dp"
+            android:hint="点击设置昵称"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/gray"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <LinearLayout
+                style="@style/sideMenuLayout"
+                android:background="@drawable/selector">
+                <TextView
+                    style="@style/sideMenuText"
+                    android:text="随身小秘书" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#44000000" />
+
+            <LinearLayout
+                style="@style/sideMenuLayout"
+                android:id="@+id/side_menu_robot"
+                android:background="@drawable/selector"
+                >
+                <ImageView
+                    android:src="@mipmap/side_robot"
+                    style="@style/sideMenuImg" />
+                <TextView
+                    style="@style/sideMenuText"
+                    android:text="聊天机器人" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#44000000" />
+
+
+            <LinearLayout
+                style="@style/sideMenuLayout"
+                android:id="@+id/side_menu_weather"
+                android:background="@drawable/selector"
+                >
+                <ImageView
+                    android:src="@mipmap/side_robot"
+                    style="@style/sideMenuImg" />
+                <TextView
+                    style="@style/sideMenuText"
+                    android:text="天气" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#44000000" />
+
+            <LinearLayout
+                style="@style/sideMenuLayout"
+                android:background="@drawable/selector"
+                android:id="@+id/side_menu_setting">
+                <ImageView
+                    style="@style/sideMenuImg"
+                    android:src="@mipmap/side_setting" />
+                <TextView
+                    style="@style/sideMenuText"
+                    android:text="设置" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#44000000" />
+
+            <LinearLayout
+                style="@style/sideMenuLayout"
+                android:id="@+id/side_menu_about"
+                android:background="@drawable/selector"
+                >
+                <ImageView
+                    android:src="@mipmap/about"
+                    style="@style/sideMenuImg" />
+                <TextView
+                    style="@style/sideMenuText"
+                    android:text="关于" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

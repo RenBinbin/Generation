@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">随身小秘书</string>
+    <string name="splash_logoname">Hello,任任任任任任先生</string>
+    <string name="splash_logodiscribe_morning">Good morning , Mr.Ren !</string>
+    <string name="splash_logodiscribe_afternoon">Good afternoon , Mr.Ren  !</string>
+    <string name="splash_logodiscribe_night">Good night , Mr.Ren  !</string>
+    <string name="splash_versionname">First generation</string>
+    <string name="splash_copyright">Copyright &#169; 2017 Secret-master All Rights Reserved\nPowered by June and Healer</string>
+    <string name="string_about_banquan">版权归作者所有</string>
+    <string name="string_about_notification">该项目为毕设项目，请勿用于商业用途</string>
+    <string name="string_about_github">github: https://github.com/Renbinbin/Graduation.git</string>
+    <string name="string_about_jianshu">Coding: https://coding.net/u/renbinbin/p/Graduation/git</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="news_type_cn">
+        <item>头条</item>
+        <item>社会</item>
+        <item>国内</item>
+        <item>国际</item>
+        <item>娱乐</item>
+        <item>体育</item>
+        <item>军事</item>
+        <item>科技</item>
+        <item>财经</item>
+        <item>时尚</item>
+    </string-array>
+    <string-array name="news_type_en">
+        <item>toutiao</item>
+        <item>shehui</item>
+        <item>guonei</item>
+        <item>guoji</item>
+        <item>yule</item>
+        <item>tiyu</item>
+        <item>junshi</item>
+        <item>keji</item>
+        <item>caijing</item>
+        <item>shishang</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.weather.city.CityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_city_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/city_back"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/list_divider_color"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <!--作用：分割线  和   拦截 EditText的获取焦点的事件 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/line1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <!--搜索-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/city_search"/>
+
+        <com.bishe.renbinbin1.secret_master.module.weather.city.ClearEditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="输入城市名、拼音或字母查询"
+            android:textColor="@color/text2"
+            android:textColorHint="@color/text2"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/line1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.bishe.renbinbin1.secret_master.module.weather.city.MySlideView
+            android:id="@+id/my_slide_view"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_alignParentRight="true"
+            />
+        <FrameLayout
+            android:id="@+id/fl_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/my_slide_view">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_sticky_example"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:id="@+id/tv_sticky_header_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/bg2"
+                android:gravity="center_vertical"
+                android:text="A"
+                android:paddingLeft="10dp"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <com.bishe.renbinbin1.secret_master.module.weather.city.CircleTextView
+            android:id="@+id/my_circle_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
